@@ -1,0 +1,22 @@
+--- sharded-slab-0.1.4/Cargo.toml	1970-01-01T00:00:01+00:00
++++ sharded-slab-0.1.4/Cargo.toml	2022-04-20T17:50:32.998851+00:00
+@@ -34,18 +34,11 @@
+ [dev-dependencies.criterion]
+ version = "0.3"
+ 
+-[dev-dependencies.loom]
+-version = "0.5"
+-features = ["checkpoint"]
+-
+ [dev-dependencies.proptest]
+ version = "1"
+ 
+ [dev-dependencies.slab]
+ version = "0.4.2"
+-[target."cfg(loom)".dependencies.loom]
+-version = "0.5"
+-features = ["checkpoint"]
+-optional = true
++
+ [badges.maintenance]
+ status = "experimental"
